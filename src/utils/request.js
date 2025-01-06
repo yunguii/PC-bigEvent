@@ -1,5 +1,5 @@
 import axios from 'axios'
-import useUserStore from '@/stores'
+import {useUserStore} from '@/stores'
 import { ElMessage } from 'element-plus'
 import router from '@/router'
 
@@ -40,7 +40,7 @@ instance.interceptors.response.use(
   (err) => {
     // TODO 5. 处理401错误
     ElMessage({
-    message: err.response.data.message || '服务异常',
+    message: err.data.message || '服务异常',
     type: 'error',
     plain: true,
     })
