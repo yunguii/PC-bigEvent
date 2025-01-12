@@ -15,7 +15,6 @@ export const useUserStore = defineStore('big-user', () => {
   const user = ref({})
   const getUser = async () => {
      const res = await getUserInfo()
-     console.log(await getUserInfo())
      user.value = res.data.data
   }
   const setUser = (obj) => {
