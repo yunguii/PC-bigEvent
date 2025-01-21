@@ -1,6 +1,6 @@
 # PC-bigEvent
 
-This template should help get you started developing with Vue 3 in Vite.
+基于ElementPlus和Vue3语法开发的PC端项目
 
 ## Recommended IDE Setup
 
